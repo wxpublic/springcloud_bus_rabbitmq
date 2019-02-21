@@ -1,4 +1,4 @@
-# springcloud_config
+# springcloud_config（RabbitMQ作为消息中间件）
 springcloud分布式配置中心Config Bus(RabbitMQ) Demo；
 
 项目跑起来的前提：是事先安装Erlang环境和RabbitMQ服务；详情参见：https://blog.csdn.net/sheinenggaosuwo/article/details/87858623
