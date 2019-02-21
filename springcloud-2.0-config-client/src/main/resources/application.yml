@@ -1,0 +1,29 @@
+spring:
+  application:
+    ####注册中心应用名称
+    name: springcloudconfigbus
+  cloud:
+    config:
+    ####读取环境后缀
+      profile: dev
+      ####读取config-server注册地址
+      discovery:
+      #服务配置中心config server端别名
+        service-id: config-server
+        #开启读取权限
+        enabled: true
+##### eureka服务注册地址
+eureka:
+  client:
+    service-url:
+           defaultZone: http://localhost:8100/eureka
+server:
+  port: 8081
+
+###开启bus刷新
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
+
