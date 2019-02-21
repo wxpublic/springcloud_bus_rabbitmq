@@ -1,5 +1,7 @@
 # springcloud_config
-springcloud分布式配置中心Config Bus(RabbitMQ) Demo
+springcloud分布式配置中心Config Bus(RabbitMQ) Demo；
+
+项目跑起来的前提：是事先安装Erlang环境和RabbitMQ服务；详情参见：https://blog.csdn.net/sheinenggaosuwo/article/details/87858623
 
 # 分布式配置中心项目模型：
 
@@ -21,3 +23,5 @@ springcloud分布式配置中心Config Bus(RabbitMQ) Demo
 仓库地址:https://gitee.com/wx_public/cloud_itmayi_config.git
 
 
+# 切换kafka消息中间件
+本案例底层采用RabbitMQ作为底层消息中间件，配置文件没有配置rabbitMQ，因为默认获取本地服务，如果需要切换到kafka则需要以下两步：1、在配置文件添加kafka配置；2、替换kafka Maven依赖 spring-cloud-starter-stream-kafka
